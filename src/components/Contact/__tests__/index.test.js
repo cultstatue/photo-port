@@ -14,5 +14,10 @@ describe('Contact component', () => {
     it('renders', () => {
         const { getByTestId } = render(<ContactForm />)
         expect(getByTestId('h1tag')).toHaveTextContent('Contact Me')
-      })
+    })
+
+    it('renders', () => {
+        const { getByTestId } = render(<ContactForm />)
+        expect(getByTestId('submitButton')).toHaveTextContent('Submit')
+    })
 })
